@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+  background-color: white;
+}
+
+/* The footer is positioned at the bottom of the page */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 30px;
+  color: White;
+  background: gray
+}
+
+/* The code styles the text at the bottom of the footer */
+.footer > .bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background: gray;
+}
+
+.container{
+  background-color: white;
+  position:relative;
+}
+
+/* .container .panel-header{
+  color:thistle;
+  background-color: wheat;
+} */
+
+.panel .panel-heading {
+  color:thistle;
+  background-color: rgb(255, 255, 255);
+}
+
+.panel .panel-body {
+  color:thistle;
+  background-color: rgb(255, 255, 255);
+}
+
+.list-group-item{
+  color:thistle;
+  background-color: wheat;
+}
+
+
+.btn-default{
+  color: pink;
+  background-color: rgb(24x0, 206, 144);
+}
+
+
+.navbar {
+  padding: 5px;
+  margin: 0;
+  color: gray; 
+  background-color: white;
+}
+
+/* This CSS styles the ufo icon in the navbar */
+.nav-hotel {
+  position: absolute;
+  bottom: 15px;
+  left: 150px;
+  width: 35px;
+  color: white;
+}
+
+/* Adding styles to the aside and filter form */
+.ufo-form {
+  margin-top: 50px;
+}
+
+.filters .panel-body {
+  padding: 0;
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: #d4d11d;
+  outline: none;
+}
+
+#table-area th {
+  text-align: center;
+}
+
+#table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(6) {
+  min-width: 70px;
+}
+
+.loader {
+  margin-top: 50px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+/* The styles for the parallax */
+.hero {
+  position: center;
+  height: 600px;
+  padding: 20px;
+  margin: 0;
+  background: rgb(241, 240, 240);
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  margin-top: 200px;
+  font-size: 0.1rem;
+  animation: title 1.2s forwards linear;
+}
+
+.hero p {
+  font-size: 2rem;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+}
+
+/* input placeholder color changes */
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+/* media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+  #table-area td {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  #table-area thead {
+    display: none;
+  }
+
+  #table-area tr td:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: hsl(54, 68%, 76%);
+  }
+
+  #table-area tr td:last-child {
+    margin-bottom: 20px;
+  }
+
+  #table-area tr td:last-child::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    content: " ";
+    background: aliceblue;
+  }
+
+  #table-area td {
+    font-size: 1.25em;
+  }
+
+  #table-area tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  #table-area tbody td::before {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    content: attr(data-th);
+  }
+
+  .hero h1 {
+    animation: smaller-title 1.2s forwards linear;
+  }
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes smaller-title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Menu Bar CSS
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #f5d002;
+  color: white;
+}
+
+.bottom a {
+  color: floralwhite;
+  text-decoration: none;
+}
+
+
+.contact_title h1{
+  color:black
+}
+
+/* team member */
+#main-bio,
+#contact-info{
+  float: left;
+  padding-top: 35px;
+}
+
+#bio-image{
+  float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+#bio-name {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#main-bio {
+  width: 70%;
+}
+
+#contact-info {
+  width: 30%;
+  padding-left: 100px
+}
+
+#bio-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 14.28%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  height: 100px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}

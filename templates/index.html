@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hotel Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/index.css">
+</head>
+
+
+
+
+<body>
+
+  <div class="wrapper">
+    <div class="hero text-center">
+      <h1>Hotel in Europe</h1>
+      <p>What would be your choice?</p>
+    </div>
+    <div class="topnav">
+      <a class="active" href="./">Home</a>
+      <a href="./tableau">Data Dashboard</a>
+      <a href="/hotel-locator">Hotel Locator</a>
+      <a href="/contact">Contact</a>
+      <a href="/machinel">Predict Your Future Hotel Stay Experience!</a>
+    </div>
+
+    <div class="container">
+      <!-- insert photo gallery -->
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 7</div>
+        <img src="static/images/hotels/casacamper.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 7</div>
+        <img src="static/images/hotels/casamimosa.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 7</div>
+        <img src="static/images/hotels/haymarkethotel.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 7</div>
+        <img src="static/images/hotels/hotel41.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 7</div>
+        <img src="static/images/hotels/htel.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 7</div>
+        <img src="static/images/hotels/ritzparis.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 7</div>
+        <img src="static/images/hotels/serras.jpg" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="static/images/hotels/casacamper.jpeg" style="width:100%"
+            onclick="currentSlide(1)" alt="Casa Camper Barcelona">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="static/images/hotels/casamimosa.jpg" style="width:100%"
+            onclick="currentSlide(2)" alt="Casa Mimosa Barcelona">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="static/images/hotels/haymarkethotel.jpg" style="width:100%"
+            onclick="currentSlide(3)" alt="Haymarket Hotel London">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="static/images/hotels/hotel41.jpg" style="width:100%" onclick="currentSlide(4)"
+            alt="Hotel 41 London">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="static/images/hotels/htel.jpg" style="width:100%" onclick="currentSlide(5)"
+            alt="Hotel de la Tamise Paris">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="static/images/hotels/ritzparis.jpg" style="width:100%" onclick="currentSlide(6)"
+            alt="Hotel Ritz Paris">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="static/images/hotels/serras.jpg" style="width:100%" onclick="currentSlide(6)"
+            alt="Hotel Serras Barcelona">
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <footer class="footer">
+      <span class="bottom">
+        <a href="/contact">Group 4 Contact Us</a>
+      </span>
+    </footer>
+  </div>
+
+
+</body>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<!-- <script src="static/js/data.js"></script> -->
+<script src="static/app.js"></script>
+
+
+</html>
